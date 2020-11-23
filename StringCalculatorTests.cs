@@ -14,27 +14,29 @@ namespace StringCalculatorAppTests
             _stringCalculator = new StringCalculator();
         }
 
-        [Test]
-        public void GivenASingleNumberWillReturnThatValue()
+        [TestCase("5", 5)] 
+        [TestCase("", 0)]
+        [TestCase( "5,5", 10)]
+        public void GivenASingleNumberWillReturnThatValue(string numbersString, int expect)
         {
-            var result = _stringCalculator.Add("5");
-            Assert.That(result,Is.EqualTo(5));
+            var result = _stringCalculator.Add(numbersString);
+            Assert.That(result,Is.EqualTo(expect));
 
         }
-        [Test]
-        public void GivenAnEmptyStringReturnZero()
-        {
-            var result = _stringCalculator.Add("");
-            Assert.That(result, Is.EqualTo(0));
+        //[Test]
+        //public void GivenAnEmptyStringReturnZero()
+        //{
+        //    var result = _stringCalculator.Add("");
+        //    Assert.That(result, Is.EqualTo(0));
 
-        }
-        [Test]
-        public void GivenTwoNumbersSeparatedByACommaReturnSum()
-        {
-            var result = _stringCalculator.Add("5,5");
-            Assert.That(result, Is.EqualTo(10));
+        //}
+        //[Test]
+        //public void GivenTwoNumbersSeparatedByACommaReturnSum()
+        //{
+        //    var result = _stringCalculator.Add("5,5");
+        //    Assert.That(result, Is.EqualTo(10));
 
-        }
+        //}
         [Test]
         public void GivenMoreThanTwoNumbersReturnTheSum()
         {
@@ -71,10 +73,24 @@ namespace StringCalculatorAppTests
 
         }
         [Test]
-        public void GivenArbitaryLengthSeperatorsWithBrackets()
+        public void GivenArbitraryLengthSeparatorsWithBracketsReturnSum()
         {
             var result = _stringCalculator.Add("//[***]\n1***2***3");
             Assert.That(result, Is.EqualTo(6));
+
+        }
+        [Test]
+        public void MultipleSingleLengthSeparatorsReturnSum()
+        {
+            var result = _stringCalculator.Add("//[*][%]\n1*2%3");
+            Assert.That(result, Is.EqualTo(6));
+
+        }
+        [Test]
+        public void MultipleLongerLengthSeparatorsReturnSum()
+        {
+            var result = _stringCalculator.Add("//[foo][bar]\n6foo2bar3");
+            Assert.That(result, Is.EqualTo(11));
 
         }
     }
