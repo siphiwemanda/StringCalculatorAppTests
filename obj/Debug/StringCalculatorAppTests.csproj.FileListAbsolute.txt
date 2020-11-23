@@ -1,0 +1,12 @@
+C:\Users\SiphiweManda\source\repos\StringCalculatorAppTests\bin\Debug\StringCalculatorAppTests.dll
+C:\Users\SiphiweManda\source\repos\StringCalculatorAppTests\bin\Debug\StringCalculatorAppTests.pdb
+C:\Users\SiphiweManda\source\repos\StringCalculatorAppTests\bin\Debug\nunit.framework.dll
+C:\Users\SiphiweManda\source\repos\StringCalculatorAppTests\bin\Debug\nunit.framework.pdb
+C:\Users\SiphiweManda\source\repos\StringCalculatorAppTests\bin\Debug\nunit.framework.xml
+C:\Users\SiphiweManda\source\repos\StringCalculatorAppTests\obj\Debug\StringCalculatorAppTests.csprojAssemblyReference.cache
+C:\Users\SiphiweManda\source\repos\StringCalculatorAppTests\obj\Debug\StringCalculatorAppTests.csproj.CoreCompileInputs.cache
+C:\Users\SiphiweManda\source\repos\StringCalculatorAppTests\obj\Debug\StringCalculatorAppTests.csproj.CopyComplete
+C:\Users\SiphiweManda\source\repos\StringCalculatorAppTests\obj\Debug\StringCalculatorAppTests.dll
+C:\Users\SiphiweManda\source\repos\StringCalculatorAppTests\obj\Debug\StringCalculatorAppTests.pdb
+C:\Users\SiphiweManda\source\repos\StringCalculatorAppTests\bin\Debug\StringCalculatorApp.dll
+C:\Users\SiphiweManda\source\repos\StringCalculatorAppTests\bin\Debug\StringCalculatorApp.pdb
